@@ -1,89 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Shubham Mishra Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubham Mishra | Portfolio</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
 body{
-margin:0;
-font-family:Arial;
-text-align:center;
-color:white;
-background:url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564") no-repeat center/cover;
+    background:#0f172a;
+    color:white;
 }
 
-/* Profile image */
+header{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+}
+
 .profile{
-width:150px;
-height:150px;
-border-radius:50%;
-margin-top:40px;
-border:4px solid white;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
 }
 
-/* Section style */
-.section{
-background:rgba(0,0,0,0.6);
-margin:30px;
-padding:20px;
-border-radius:15px;
-}
-
-/* Mobile media query */
-@media (max-width:600px){
-.section{
-margin:15px;
-padding:15px;
-}
 h1{
-font-size:24px;
-}
+    margin-top:15px;
+    font-size:3rem;
 }
 
+.tagline{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+nav{
+    background:#111827;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#2563eb;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+}
 </style>
 </head>
 
 <body>
 
-<img src="https://wallpapercave.com/wp/wp9429116.jpg" class="profile">
-<h1>Shubham Mishra</h1>
-<p>Class 7 Student</p>
+<header>
+    <img src="myphoto.jpg" class="profile" alt="My Photo">
+    <h1>Shubham Mishra</h1>
+    <p class="tagline">Class 8 Student | Science Lover | Future Programmer</p>
+</header>
 
-<div class="section">
-<h2>About Me</h2>
-<p>Hello! My name is Shubham Mishra. I am a student of class 7. I love learning new technology and science.</p>
-</div>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<div class="section">
-<h2>Hobbies</h2>
-<p>• Coding<br>
-• Reading books<br>
-• Playing cricket<br>
-• Drawing<br>
-• Exploring technology</p>
-</div>
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Shubham Mishra, a Class 8 student.
+            I enjoy Science, Mathematics, Geography and Computer Programming.
+            I love creating projects and learning new technologies.
+        </p>
+    </div>
+</section>
 
-<div class="section">
-<h2>Interests</h2>
-<p>• Computers<br>
-• Science<br>
-• Robotics<br>
-• Space technology<br>
-• Software development</p>
-</div>
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">Python</div>
+            <div class="skill">Science Projects</div>
+            <div class="skill">Mathematics</div>
+            <div class="skill">Public Speaking</div>
+        </div>
+    </div>
+</section>
 
-<div class="section">
-<h2>Achievements</h2>
-<p>• School projects<br>
-• Science exhibition participation<br>
-• Learning website development</p>
-</div>
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li>Chandrayaan-3 Science Exhibition Project</li>
+            <li>Simple Electric Circuit Model</li>
+            <li>Geography Scrapbook Project</li>
+            <li>Python Programming Practice</li>
+        </ul>
+    </div>
+</section>
 
-<div class="section">
-<h2>Goal</h2>
-<p>My goal is to become a successful Software Engineer and create innovative technology for the future.</p>
-</div>
+<section id="achievements">
+    <div class="card">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Participated in School Science Exhibition</li>
+            <li>Completed Multiple School Projects</li>
+            <li>Learning Web Development</li>
+            <li>Developing Python Programming Skills</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Name: Shubham Mishra</p>
+        <p>School: Pride International School, Narkatiaganj</p>
+        <p>Class: 8</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Shubham Mishra Portfolio</p>
+</footer>
 
 </body>
 </html>
