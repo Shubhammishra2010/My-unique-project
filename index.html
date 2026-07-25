@@ -1,103 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shubham Mishra | Future Software Engineer</title>
 
 <style>
-html {
-  scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #000428, #004e92);
-  color: white;
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-nav {
-  background: rgba(0,0,0,0.8);
-  padding: 15px;
-  position: sticky;
-  top: 0;
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(-45deg,#000428,#004e92,#1f1c2c,#0f2027);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+    color:white;
+    text-align:center;
 }
 
-nav a {
-  color: #00f7ff;
-  margin: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
-nav a:hover {
-  color: white;
+nav{
+    background:rgba(0,0,0,.8);
+    padding:18px;
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(10px);
+    z-index:100;
 }
 
-.profile-circle {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  margin: 60px auto 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 55px;
-  font-weight: bold;
-  color: #00f7ff;
-  border: 4px solid #00f7ff;
-  box-shadow: 0 0 25px #00f7ff;
-  animation: glow 2s infinite alternate;
+nav a{
+    color:#00f7ff;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-@keyframes glow {
-  from { box-shadow: 0 0 15px #00f7ff; }
-  to { box-shadow: 0 0 35px #00f7ff; }
+nav a:hover{
+    color:white;
 }
 
-h1 {
-  color: #00f7ff;
-  margin-bottom: 5px;
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-top:50px;
+    border:5px solid #00f7ff;
+    box-shadow:0 0 30px #00f7ff;
+    animation:glow 2s infinite alternate;
 }
 
-.card {
-  background: rgba(0,0,0,0.5);
-  margin: 25px;
-  padding: 25px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  transition: 0.4s;
+@keyframes glow{
+from{box-shadow:0 0 15px #00f7ff;}
+to{box-shadow:0 0 40px #00f7ff;}
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 25px #00f7ff;
+h1{
+    color:#00f7ff;
+    margin-top:20px;
+    font-size:42px;
 }
 
-button {
-  padding: 10px 20px;
-  border: none;
-  background: #00f7ff;
-  color: black;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
+h3{
+    margin-bottom:30px;
 }
 
-button:hover {
-  background: white;
+.card{
+    width:85%;
+    max-width:900px;
+    margin:30px auto;
+    background:rgba(255,255,255,.08);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.2);
+    transition:.4s;
 }
 
-footer {
-  margin-top: 40px;
-  padding: 15px;
-  background: rgba(0,0,0,0.8);
-  font-size: 14px;
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 0 30px #00f7ff;
 }
 
+h2{
+    color:#00f7ff;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#00f7ff;
+    color:black;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:white;
+    transform:scale(1.08);
+}
+
+footer{
+    margin-top:40px;
+    padding:20px;
+    background:rgba(0,0,0,.8);
+}
 </style>
+
 </head>
 
 <body>
@@ -110,43 +141,54 @@ footer {
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="profile-circle">
-SM
-</div>
+<img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=300&h=300&fit=crop&crop=faces" class="profile-img" alt="Profile">
 
 <h1>Shubham Mishra</h1>
 <h3>Future Software Engineer</h3>
 
 <div class="card" id="about">
-<h2>About Me</h2>
-<p>I am a curious and passionate student who loves coding, technology and innovation.</p>
+<h2>👨‍💻 About Me</h2>
+<p>
+Hello! I am <b>Shubham Mishra</b>, a passionate Class 8 student who loves coding, technology, creativity, and problem-solving. I enjoy learning new programming languages, creating beautiful websites, and exploring the exciting world of computers. Every day I try to improve my skills, gain new knowledge, and build projects that make me a better programmer and a confident learner.
+</p>
 </div>
 
 <div class="card" id="skills">
-<h2>Skills</h2>
-<p>HTML, CSS, Basic JavaScript, Learning Python</p>
+<h2>💻 Skills</h2>
+<p>
+I have knowledge of HTML, CSS, and Basic JavaScript, and I am currently learning Python programming. I enjoy designing attractive websites, solving logical problems, improving my coding skills, and learning modern technologies that help me become a future software engineer.
+</p>
 </div>
 
 <div class="card" id="projects">
-<h2>Projects</h2>
-<p>Personal Portfolio Website (Live on GitHub)</p>
+<h2>🚀 Projects</h2>
+<p>
+I have successfully created my personal portfolio website and published it on GitHub Pages. I also enjoy developing school projects related to Science, Mathematics, and Technology using HTML, CSS, and creative ideas. Every project helps me learn something new and improve my programming skills.
+</p>
 </div>
 
 <div class="card" id="goal">
-<h2>Goal</h2>
-<p>My goal is to become a Software Engineer and build amazing technology that helps people around the world.</p>
+<h2>🎯 Goal</h2>
+<p>
+My dream is to become a successful Software Engineer and develop innovative applications that make people's lives easier. I want to work with Artificial Intelligence, Robotics, Cyber Security, and Web Development while continuously learning new technologies and creating useful software for the world.
+</p>
 </div>
 
 <div class="card" id="contact">
-<h2>Contact Me</h2>
-<p>Email: your-email@example.com</p>
-<button onclick="alert('Thanks for visiting my website 🚀')">
-Say Hello
+<h2>📧 Contact Me</h2>
+<p>
+Email: your-email@example.com<br><br>
+Thank you for visiting my portfolio website. Your support and valuable feedback inspire me to continue learning, improving my coding skills, and building even more creative and useful projects in the future.
+</p>
+
+<button onclick="alert('Thank you for visiting my portfolio! 🚀')">
+Say Hello 👋
 </button>
+
 </div>
 
 <footer>
-© 2026 Shubham Mishra | Built with ❤️ and Code
+© 2026 Shubham Mishra | Designed with ❤️ using HTML & CSS
 </footer>
 
 </body>
